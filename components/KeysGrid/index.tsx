@@ -1,3 +1,4 @@
+import { delKeyStyle, resetKeyStyle, resultKeyStyle } from '../../utils';
 import Key from './Key';
 
 const KeysGrid = () => {
@@ -6,17 +7,7 @@ const KeysGrid = () => {
       <Key>7</Key>
       <Key>8</Key>
       <Key>9</Key>
-      <Key
-        style={{
-          fontSize: '22px',
-          textTransform: 'uppercase',
-          backgroundColor: 'hsl(225, 21%, 49%)',
-          boxShadow: '0px 4px 0px hsl(224, 28%, 35%)',
-          color: '#ffffff',
-        }}
-      >
-        del
-      </Key>
+      <Key style={delKeyStyle}>del</Key>
       <Key>4</Key>
       <Key>5</Key>
       <Key>6</Key>
@@ -29,6 +20,8 @@ const KeysGrid = () => {
       <Key>0</Key>
       <Key>/</Key>
       <Key>x</Key>
+      <Key style={resetKeyStyle}>Reset</Key>
+      <Key style={resultKeyStyle}>=</Key>
     </div>
   );
 };
