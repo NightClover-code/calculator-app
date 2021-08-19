@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
 @import './_theme1.scss';
+@import './_theme2.scss';
+@import './_theme3.scss';
+@import '../components/Calculator/calculator';
 
 * {
   margin: 0;
@@ -8,13 +11,18 @@
 }
 
 .app__container {
-  min-height: 100vh;
+  height: 100vh;
   overflow: hidden;
   font-size: 34px;
   font-family: 'Spartan', sans-serif;
+  background-color: $dark-desaturated-blue-main;
   .wrapper {
     min-width: 250px;
     max-width: 2000px;
     margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
