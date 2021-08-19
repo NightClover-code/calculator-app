@@ -217,6 +217,7 @@
 }
 
 .key {
+  position: relative;
   background-color: #eae3dc;
   border-radius: 10px;
   -webkit-box-shadow: 0px 4px 0px #b4a597;
@@ -232,6 +233,7 @@
           justify-content: center;
   font-size: 30px;
   padding-top: 6px;
+  cursor: pointer;
   color: #404e72;
 }
 
@@ -245,6 +247,34 @@
 @media screen and (max-width: 300px) {
   .key {
     font-size: 17px !important;
+  }
+}
+
+.key:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  z-index: 100;
+  -webkit-box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.15);
+  -webkit-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
+}
+
+@media screen and (max-width: 450px) {
+  .overlay {
+    border-radius: 5px;
   }
 }
 
