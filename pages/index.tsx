@@ -6,7 +6,9 @@ const HomePage: NextPage = () => {
   return (
     <>
       <SEO {...seoConfig} />
-      <main></main>
+      <main className="app__container">
+        <div className="wrapper"></div>
+      </main>
     </>
   );
 };
