@@ -12,6 +12,9 @@ const Caclulator = () => (
         </div>
       </div>
     </div>
+    <div className="calculator__screen">
+      <h1>399,981</h1>
+    </div>
   </div>
 );
 

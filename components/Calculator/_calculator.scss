@@ -53,4 +53,17 @@
       }
     }
   }
+  .calculator__screen {
+    width: 100%;
+    height: 150px;
+    background-color: $dark-desaturated-blue-screen;
+    color: #fff;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 10px;
+    padding: 0 40px;
+    margin-top: 25px;
+  }
 }
