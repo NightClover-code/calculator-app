@@ -1,4 +1,4 @@
-import Key from '../KeysGrid/Key';
+import KeysGrid from '../KeysGrid';
 
 const Caclulator = () => (
   <div className="calculator__container">
@@ -18,24 +18,7 @@ const Caclulator = () => (
       <h1>399,981</h1>
     </div>
     <div className="calculator__body">
-      <div className="keys__grid">
-        <Key />
-        <Key />
-        <Key />
-        <Key />
-        <Key />
-        <Key />
-        <Key />
-        <Key />
-        <Key />
-        <Key />
-        <Key />
-        <Key />
-        <Key />
-        <Key />
-        <Key />
-        <Key />
-      </div>
+      <KeysGrid />
       <div className="calculator__foot">
         <div className="reset__key"></div>
         <div className="result__key"></div>

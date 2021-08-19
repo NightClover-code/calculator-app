@@ -123,11 +123,26 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 30px;
+  gap: 23px;
 }
 
 .key {
-  background-color: #fff;
+  background-color: #eae3dc;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 4px 0px #b4a597;
+          box-shadow: 0px 4px 0px #b4a597;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 30px;
+  padding-top: 5px;
+  color: #404e72;
 }
 
 * {
@@ -140,7 +155,7 @@
 .app__container {
   height: 100vh;
   overflow: hidden;
-  font-size: 25px;
+  font-size: 23px;
   font-family: 'Spartan', sans-serif;
   background-color: #3a4764;
 }
