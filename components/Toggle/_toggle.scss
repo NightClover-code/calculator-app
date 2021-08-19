@@ -1,0 +1,26 @@
+.toggle__slider {
+  width: 75px;
+  height: 28px;
+  background-color: #fff;
+  border-radius: 30px;
+  background-color: $dark-desaturated-blue-toggle;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 0 6px;
+  cursor: pointer;
+  @media screen and (max-width: 300px) {
+    width: 65px;
+    height: 23px;
+  }
+  .toggle__circle {
+    width: 17px;
+    height: 17px;
+    background-color: $red;
+    border-radius: 100%;
+    @media screen and (max-width: 300px) {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}

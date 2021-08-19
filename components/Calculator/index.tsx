@@ -1,4 +1,5 @@
 import KeysGrid from '../KeysGrid';
+import Toggle from '../Toggle';
 
 const Caclulator = () => (
   <div className="calculator__container">
@@ -8,9 +9,7 @@ const Caclulator = () => (
         <h4>Theme</h4>
         <div className="theme__toggler">
           <span>123</span>
-          <div className="toggle__slider">
-            <div className="toggle__circle"></div>
-          </div>
+          <Toggle />
         </div>
       </div>
     </div>
