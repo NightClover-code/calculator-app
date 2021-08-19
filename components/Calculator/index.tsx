@@ -7,7 +7,7 @@ const Caclulator = () => (
         <div className="theme__toggler">
           <span>123</span>
           <div className="toggle__slider">
-            <div className="toggle__button"></div>
+            <div className="toggle__circle"></div>
           </div>
         </div>
       </div>

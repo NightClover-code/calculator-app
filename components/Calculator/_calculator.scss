@@ -6,6 +6,9 @@
     width: 80%;
   }
   .caclulator__head {
+    h2 {
+      margin-top: 8px;
+    }
     color: #ffffff;
     display: flex;
     justify-content: space-between;
@@ -36,7 +39,15 @@
           background-color: #fff;
           border-radius: 30px;
           background-color: $dark-desaturated-blue-toggle;
+          display: flex;
+          align-items: center;
+          padding: 0 6px;
+          cursor: pointer;
           .toggle__circle {
+            width: 17px;
+            height: 17px;
+            background-color: $red;
+            border-radius: 100%;
           }
         }
       }
