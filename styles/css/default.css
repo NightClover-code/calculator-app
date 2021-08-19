@@ -1,7 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.app__container {
+  min-height: 100vh;
+  overflow: hidden;
+  font-size: 34px;
+  font-family: 'Spartan', sans-serif;
+}
+
+.app__container .wrapper {
+  min-width: 250px;
+  max-width: 2000px;
+  margin: auto;
 }
 /*# sourceMappingURL=default.css.map */
