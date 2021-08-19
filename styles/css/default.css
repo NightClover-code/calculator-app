@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
-.calculator__body {
-  min-height: 500px;
-  background-color: #fff;
-  width: 500px;
+.calculator__container {
+  min-height: 700px;
+  max-width: 600px;
+  width: 100%;
 }
 
 * {
