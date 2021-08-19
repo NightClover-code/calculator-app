@@ -1,7 +1,7 @@
 .calculator__container {
-  min-height: 700px;
-  max-width: 600px;
-  width: 100%;
+  min-height: 650px;
+  max-width: 500px;
+  width: 80%;
   @media screen and (max-width: 800px) {
     width: 80%;
   }
@@ -55,7 +55,7 @@
   }
   .calculator__screen {
     width: 100%;
-    height: 150px;
+    height: 120px;
     background-color: $dark-desaturated-blue-screen;
     color: #fff;
     text-align: right;
@@ -65,5 +65,11 @@
     border-radius: 10px;
     padding: 0 40px;
     margin-top: 25px;
+  }
+  .calculator__body {
+    background-color: $dark-desaturated-blue-toggle;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 30px;
   }
 }

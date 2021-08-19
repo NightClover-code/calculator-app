@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
 .calculator__container {
-  min-height: 700px;
-  max-width: 600px;
-  width: 100%;
+  min-height: 650px;
+  max-width: 500px;
+  width: 80%;
 }
 
 @media screen and (max-width: 800px) {
@@ -88,7 +88,7 @@
 
 .calculator__container .calculator__screen {
   width: 100%;
-  height: 150px;
+  height: 120px;
   background-color: #182034;
   color: #fff;
   text-align: right;
@@ -104,6 +104,30 @@
   border-radius: 10px;
   padding: 0 40px;
   margin-top: 25px;
+}
+
+.calculator__container .calculator__body {
+  background-color: #232c43;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding: 30px;
+}
+
+.keys__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (60px)[4];
+      grid-template-rows: repeat(4, 60px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+
+.key {
+  background-color: #fff;
 }
 
 * {

@@ -1,0 +1,7 @@
+.keys__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 60px);
+  justify-content: center;
+  gap: 30px;
+}

@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
-@import './_theme1.scss';
-@import './_theme2.scss';
-@import './_theme3.scss';
+@import './theme1';
+@import './theme2';
+@import './theme3';
 @import '../components/Calculator/calculator';
+@import '../components/KeysGrid/keys-grid';
+@import '../components/KeysGrid/Key/key';
 
 * {
   margin: 0;
