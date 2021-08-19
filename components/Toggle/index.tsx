@@ -1,11 +1,11 @@
+import Box from './Box';
+
 const Toggle = () => {
   return (
     <div className="toggle__slider">
-      <div id="box__1">
-        <div className="toggle__circle"></div>
-      </div>
-      <div id="box__2"></div>
-      <div id="box__3"></div>
+      <Box id="box__1"></Box>
+      <Box id="box__2"></Box>
+      <Box id="box__3"></Box>
     </div>
   );
 };
