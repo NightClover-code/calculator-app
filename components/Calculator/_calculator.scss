@@ -1,5 +1,4 @@
 .calculator__container {
-  min-height: 650px;
   max-width: 530px;
   width: 80%;
   @media screen and (max-width: 800px) {
@@ -21,6 +20,14 @@
         text-transform: uppercase;
         font-size: 13px;
         letter-spacing: 2px;
+        @media screen and (max-width: 300px) {
+          width: 65px;
+          height: 23px;
+          font-size: 10px;
+          margin-top: 25px;
+          margin-right: 0;
+          text-align: right;
+        }
       }
       .theme__toggler {
         margin-bottom: 10px;
@@ -32,6 +39,9 @@
           padding-bottom: 5px;
           font-size: 13px;
           letter-spacing: 18px;
+          @media screen and (max-width: 300px) {
+            letter-spacing: 15px;
+          }
         }
         .toggle__slider {
           width: 75px;
@@ -43,11 +53,19 @@
           align-items: center;
           padding: 0 6px;
           cursor: pointer;
+          @media screen and (max-width: 300px) {
+            width: 65px;
+            height: 23px;
+          }
           .toggle__circle {
             width: 17px;
             height: 17px;
             background-color: $red;
             border-radius: 100%;
+            @media screen and (max-width: 300px) {
+              width: 15px;
+              height: 15px;
+            }
           }
         }
       }
@@ -65,11 +83,28 @@
     border-radius: 10px;
     padding: 0 40px;
     margin-top: 25px;
+    @media screen and (max-width: 600px) {
+      padding: 0 25px;
+    }
+    @media screen and (max-width: 400px) {
+      font-size: 18px;
+      height: 100px;
+    }
+    @media screen and (max-width: 300px) {
+      font-size: 15px;
+      height: 80px;
+    }
   }
   .calculator__body {
     background-color: $dark-desaturated-blue-toggle;
     border-radius: 10px;
     margin-top: 30px;
     padding: 30px;
+    @media screen and (max-width: 400px) {
+      padding: 25px;
+    }
+    @media screen and (max-width: 300px) {
+      padding: 20px;
+    }
   }
 }

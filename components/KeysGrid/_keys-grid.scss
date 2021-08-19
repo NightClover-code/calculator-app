@@ -4,4 +4,18 @@
   grid-template-rows: repeat(5, 55px);
   justify-content: center;
   gap: 23px;
+  @media screen and (max-width: 500px) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 50px);
+    gap: 20px;
+  }
+  @media screen and (max-width: 400px) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 50px);
+    gap: 15px;
+  }
+  @media screen and (max-width: 300px) {
+    grid-template-rows: repeat(5, 35px);
+    gap: 14px;
+  }
 }
