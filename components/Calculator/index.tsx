@@ -15,6 +15,15 @@ const Caclulator = () => (
     <div className="calculator__screen">
       <h1>399,981</h1>
     </div>
+    <div className="caclulator__body">
+      <div className="keys__grid">
+        <div className="key"></div>
+      </div>
+      <div className="calculator__foot">
+        <div className="reset__key"></div>
+        <div className="result__key"></div>
+      </div>
+    </div>
   </div>
 );
 
