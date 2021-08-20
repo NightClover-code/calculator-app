@@ -7,10 +7,11 @@ interface KeyProps {
 }
 
 const Key: React.FC<KeyProps> = ({ children, style, value }) => {
-  const { setResult } = useContext(ResultContext);
+  const { result, setResult } = useContext(ResultContext);
 
-  const onKeyClick = (event: MouseEvent<HTMLDivElement>) => {
-    console.log(value);
+  const onKeyClick = () => {
+    //@ts-ignore
+    setResult(result + value);
   };
 
   return (
