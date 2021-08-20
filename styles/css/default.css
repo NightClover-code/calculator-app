@@ -23,6 +23,8 @@
 .calculator__container .calculator__head h2 {
   margin-top: 8px;
   color: var(--text);
+  -webkit-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
 }
 
 .calculator__container .calculator__head .theme__toggler__container {
@@ -41,6 +43,8 @@
   text-transform: uppercase;
   font-size: 13px;
   letter-spacing: 2px;
+  -webkit-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
 }
 
 @media screen and (max-width: 300px) {
@@ -74,6 +78,8 @@
   padding-bottom: 5px;
   font-size: 13px;
   letter-spacing: 18px;
+  -webkit-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
 }
 
 @media screen and (max-width: 300px) {
@@ -99,6 +105,8 @@
   border-radius: 10px;
   padding: 0 40px;
   margin-top: 25px;
+  -webkit-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
 }
 
 @media screen and (max-width: 600px) {
@@ -129,9 +137,13 @@
 
 .calculator__container .calculator__screen .container .screen__content {
   color: var(--text);
+  -webkit-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
 }
 
 .calculator__container .calculator__body {
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   background-color: var(--toggle);
   border-radius: 10px;
   margin-top: 30px;
@@ -197,6 +209,8 @@
   border-radius: 10px;
   -webkit-box-shadow: 0px 4px 0px var(--key-shadow);
           box-shadow: 0px 4px 0px var(--key-shadow);
+  -webkit-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -210,6 +224,8 @@
   padding-top: 6px;
   cursor: pointer;
   color: var(--key-text);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 @media screen and (max-width: 450px) {
@@ -259,6 +275,8 @@
   background-color: #fff;
   border-radius: 30px;
   background-color: var(--toggle);
+  -webkit-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -281,6 +299,8 @@
   width: 17px;
   height: 17px;
   background-color: var(--result);
+  -webkit-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
   border-radius: 100%;
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
   transition: -webkit-transform 0.2s ease-in-out;

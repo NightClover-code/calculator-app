@@ -3,6 +3,7 @@
   background-color: var(--key);
   border-radius: 10px;
   box-shadow: 0px 4px 0px var(--key-shadow);
+  transition: color 0.4s ease-in-out;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,6 +11,7 @@
   padding-top: 6px;
   cursor: pointer;
   color: var(--key-text);
+  transition: all 0.4s ease-in-out;
   @media screen and (max-width: 450px) {
     font-size: 20px !important;
     border-radius: 5px;
