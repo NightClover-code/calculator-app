@@ -7,6 +7,7 @@
 @import '../components/KeysGrid/Key/key';
 @import '../components/Toggle/toggle';
 @import '../components/Toggle/Box/box';
+@import './themes';
 
 * {
   margin: 0;
@@ -19,7 +20,7 @@
   overflow: hidden;
   font-size: 23px;
   font-family: 'Spartan', sans-serif;
-  background-color: $dark-desaturated-blue-main;
+  background-color: var(--bg-main);
   .wrapper {
     min-width: 250px;
     max-width: 2000px;
@@ -29,4 +30,32 @@
     justify-content: center;
     align-items: center;
   }
+}
+
+.dark__theme {
+  --bg-main: hsl(222, 26%, 31%);
+  --toggle: hsl(223, 31%, 20%);
+  --screen: hsl(224, 36%, 15%);
+  --delete: hsl(225, 21%, 49%);
+  --delete-text: hsl(224, 28%, 35%);
+  --result: hsl(6, 63%, 50%);
+  --result-shadow: hsl(6, 70%, 34%);
+  --key: hsl(30, 25%, 89%);
+  --key-shadow: hsl(28, 16%, 65%);
+  --key-text: hsl(221, 14%, 31%);
+  --white: hsl(0, 0, 100%);
+}
+
+.light__theme {
+  --bg-main: hsl(0, 0%, 90%);
+  --toggle: hsl(0, 5%, 81%);
+  --screen: hsl(0, 0%, 93%);
+  --delete: hsl(185, 42%, 37%);
+  --delete-text: hsl(185, 58%, 25%);
+  --result: hsl(25, 98%, 40%);
+  --result-shadow: hsl(25, 99%, 27%);
+  --key: hsl(45, 7%, 89%);
+  --key-shadow: hsl(35, 11%, 61%);
+  --key-text: hsl(60, 10%, 19%);
+  --white: hsl(0, 0, 100%);
 }

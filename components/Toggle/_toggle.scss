@@ -3,7 +3,7 @@
   height: 28px;
   background-color: #fff;
   border-radius: 30px;
-  background-color: $dark-desaturated-blue-toggle;
+  background-color: var(--toggle);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
@@ -16,7 +16,7 @@
   .toggle__circle {
     width: 17px;
     height: 17px;
-    background-color: $red;
+    background-color: var(--result);
     border-radius: 100%;
     transition: transform 0.2s ease-in-out;
     @media screen and (max-width: 300px) {

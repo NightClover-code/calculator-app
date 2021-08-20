@@ -1,5 +1,6 @@
 import { CSSProperties, useContext } from 'react';
 import { ResultContext } from '../../../context';
+import { isFloat } from '../../../utils';
 
 interface KeyProps {
   style?: CSSProperties;
@@ -40,10 +41,6 @@ const Key: React.FC<KeyProps> = ({ children, style, value }) => {
     } else {
       return setResult(val);
     }
-  };
-
-  const isFloat = (n: number) => {
-    return Number(n) === n && n % 1 !== 0;
   };
 
   return (

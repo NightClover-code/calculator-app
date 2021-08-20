@@ -82,7 +82,7 @@
 .calculator__container .calculator__screen {
   width: 100%;
   height: 120px;
-  background-color: #182034;
+  background-color: var(--screen);
   color: #fff;
   text-align: right;
   display: -webkit-box;
@@ -126,7 +126,7 @@
 }
 
 .calculator__container .calculator__body {
-  background-color: #232c43;
+  background-color: var(--toggle);
   border-radius: 10px;
   margin-top: 30px;
   padding: 30px;
@@ -187,10 +187,10 @@
 
 .key {
   position: relative;
-  background-color: #eae3dc;
+  background-color: var(--key);
   border-radius: 10px;
-  -webkit-box-shadow: 0px 4px 0px #b4a597;
-          box-shadow: 0px 4px 0px #b4a597;
+  -webkit-box-shadow: 0px 4px 0px var(--key-shadow);
+          box-shadow: 0px 4px 0px var(--key-shadow);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -203,7 +203,7 @@
   font-size: 30px;
   padding-top: 6px;
   cursor: pointer;
-  color: #404e72;
+  color: var(--key-text);
 }
 
 @media screen and (max-width: 450px) {
@@ -252,7 +252,7 @@
   height: 28px;
   background-color: #fff;
   border-radius: 30px;
-  background-color: #232c43;
+  background-color: var(--toggle);
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -274,7 +274,7 @@
 .toggle__slider .toggle__circle {
   width: 17px;
   height: 17px;
-  background-color: #d03f2f;
+  background-color: var(--result);
   border-radius: 100%;
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
   transition: -webkit-transform 0.2s ease-in-out;
@@ -316,7 +316,7 @@
   overflow: hidden;
   font-size: 23px;
   font-family: 'Spartan', sans-serif;
-  background-color: #3a4764;
+  background-color: var(--bg-main);
 }
 
 .app__container .wrapper {
@@ -333,5 +333,33 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.dark__theme {
+  --bg-main: hsl(222, 26%, 31%);
+  --toggle: hsl(223, 31%, 20%);
+  --screen: hsl(224, 36%, 15%);
+  --delete: hsl(225, 21%, 49%);
+  --delete-text: hsl(224, 28%, 35%);
+  --result: hsl(6, 63%, 50%);
+  --result-shadow: hsl(6, 70%, 34%);
+  --key: hsl(30, 25%, 89%);
+  --key-shadow: hsl(28, 16%, 65%);
+  --key-text: hsl(221, 14%, 31%);
+  --white: hsl(0, 0, 100%);
+}
+
+.light__theme {
+  --bg-main: hsl(0, 0%, 90%);
+  --toggle: hsl(0, 5%, 81%);
+  --screen: hsl(0, 0%, 93%);
+  --delete: hsl(185, 42%, 37%);
+  --delete-text: hsl(185, 58%, 25%);
+  --result: hsl(25, 98%, 40%);
+  --result-shadow: hsl(25, 99%, 27%);
+  --key: hsl(45, 7%, 89%);
+  --key-shadow: hsl(35, 11%, 61%);
+  --key-text: hsl(60, 10%, 19%);
+  --white: hsl(0, 0, 100%);
 }
 /*# sourceMappingURL=default.css.map */
