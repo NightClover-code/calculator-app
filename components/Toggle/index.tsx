@@ -1,10 +1,24 @@
+import { useContext } from 'react';
+import { CounterContext } from '../../context';
 import Box from './Box';
 
 const Toggle = () => {
+  const { counter } = useContext(CounterContext);
+
+  const distance = 22;
+  const preciseDistance = distance * counter!;
+
   return (
     <div className="toggle__slider">
       <Box id="box__1" dataId={0}>
-        <div className="toggle__circle" id="circle"></div>
+        <div
+          className="toggle__circle"
+          id="circle"
+          style={{
+            transform:
+              counter !== null ? `translateX(${preciseDistance}px)` : '',
+          }}
+        ></div>
       </Box>
       <Box id="box__2" dataId={1}></Box>
       <Box id="box__3" dataId={2}></Box>
