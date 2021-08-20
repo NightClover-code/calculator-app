@@ -1,17 +1,13 @@
-import { useState, createContext, useEffect } from 'react';
-import { counterState } from '../types';
+import { useState, createContext } from 'react';
+import { CounterState } from '../types';
 
-export const CounterContext = createContext<counterState>({
+export const CounterContext = createContext<CounterState>({
   counter: 0,
   setCounter: () => '',
 });
 
 export const CounterProvider: React.FC = ({ children }) => {
   const [counter, setCounter] = useState<number>(0);
-
-  useEffect(() => {
-    console.log(counter);
-  }, [counter]);
 
   return (
     <CounterContext.Provider value={{ counter, setCounter }}>

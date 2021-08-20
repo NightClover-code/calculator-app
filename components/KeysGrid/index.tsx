@@ -4,24 +4,30 @@ import Key from './Key';
 const KeysGrid = () => {
   return (
     <div className="keys__grid">
-      <Key>7</Key>
-      <Key>8</Key>
-      <Key>9</Key>
-      <Key style={delKeyStyle}>del</Key>
-      <Key>4</Key>
-      <Key>5</Key>
-      <Key>6</Key>
-      <Key>+</Key>
-      <Key>1</Key>
-      <Key>2</Key>
-      <Key>3</Key>
-      <Key>-</Key>
-      <Key>.</Key>
-      <Key>0</Key>
-      <Key>/</Key>
-      <Key>x</Key>
-      <Key style={resetKeyStyle}>Reset</Key>
-      <Key style={resultKeyStyle}>=</Key>
+      <Key value={7}>7</Key>
+      <Key value={8}>8</Key>
+      <Key value={9}>9</Key>
+      <Key value={'delete'} style={delKeyStyle}>
+        del
+      </Key>
+      <Key value={4}>4</Key>
+      <Key value={5}>5</Key>
+      <Key value={6}>6</Key>
+      <Key value={'+'}>+</Key>
+      <Key value={1}>1</Key>
+      <Key value={2}>2</Key>
+      <Key value={3}>3</Key>
+      <Key value={'-'}>-</Key>
+      <Key value={'.'}>.</Key>
+      <Key value={'0'}>0</Key>
+      <Key value={'/'}>/</Key>
+      <Key value={'x'}>x</Key>
+      <Key value={'reset'} style={resetKeyStyle}>
+        Reset
+      </Key>
+      <Key value={'='} style={resultKeyStyle}>
+        =
+      </Key>
     </div>
   );
 };
