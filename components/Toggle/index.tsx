@@ -9,7 +9,7 @@ const Toggle = () => {
   const preciseDistance = distance * counter;
 
   return (
-    <div className="toggle__slider">
+    <div className="toggle__slider no__select">
       <Box id="box__1" dataId={0}>
         <div
           className="toggle__circle"
