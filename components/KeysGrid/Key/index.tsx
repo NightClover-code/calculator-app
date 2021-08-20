@@ -18,16 +18,32 @@ const Key: React.FC<KeyProps> = ({ children, style, value }) => {
       case 'reset':
         return setResult('');
       default:
-        return setResult(result + value);
+        return defaultCaseHandler(value);
     }
   };
 
   const evalExpression = (val: string) => {
     try {
-      return val !== '' ? setResult(eval(val)) : '';
+      const operation = isFloat(eval(val))
+        ? (Math.round(eval(val) * 100) / 100).toFixed(2).toString()
+        : eval(val);
+
+      return val !== '' ? setResult(operation) : '';
     } catch (err) {
       return setResult('Invalid Input');
     }
+  };
+
+  const defaultCaseHandler = (val: string) => {
+    if (result !== 'Invalid Input') {
+      return setResult(result + val);
+    } else {
+      return setResult(val);
+    }
+  };
+
+  const isFloat = (n: number) => {
+    return Number(n) === n && n % 1 !== 0;
   };
 
   return (
