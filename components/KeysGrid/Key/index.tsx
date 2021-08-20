@@ -1,4 +1,5 @@
-import { CSSProperties, useState } from 'react';
+import { CSSProperties, useContext, MouseEvent } from 'react';
+import { ResultContext } from '../../../context';
 
 interface KeyProps {
   style?: CSSProperties;
@@ -6,16 +7,14 @@ interface KeyProps {
 }
 
 const Key: React.FC<KeyProps> = ({ children, style, value }) => {
-  const [result, setResult] = useState<number>(0);
+  const { setResult } = useContext(ResultContext);
 
-  const onKeyClick = () => {
-    if (typeof value === 'number') {
-      setResult(value);
-    }
+  const onKeyClick = (event: MouseEvent<HTMLDivElement>) => {
+    console.log(value);
   };
 
   return (
-    <div className="key" style={style}>
+    <div className="key" style={style} onClick={onKeyClick}>
       <div className="overlay"></div>
       {children}
     </div>

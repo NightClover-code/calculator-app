@@ -1,12 +1,14 @@
 import '../styles/css/default.css';
 import { AppProps } from 'next/app';
-import { CounterProvider } from '../context';
+import { CounterProvider, ResultProvider } from '../context';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <CounterProvider>
-      <Component {...pageProps} />
-    </CounterProvider>
+    <ResultProvider>
+      <CounterProvider>
+        <Component {...pageProps} />
+      </CounterProvider>
+    </ResultProvider>
   );
 }
 export default MyApp;
