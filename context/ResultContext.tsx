@@ -2,12 +2,12 @@ import { createContext, useState } from 'react';
 import { ResultState } from '../types';
 
 export const ResultContext = createContext<ResultState>({
-  result: 0,
+  result: '',
   setResult: () => 0,
 });
 
 export const ResultProvider: React.FC = ({ children }) => {
-  const [result, setResult] = useState<number>(0);
+  const [result, setResult] = useState<string>('  ');
 
   return (
     <ResultContext.Provider value={{ result, setResult }}>

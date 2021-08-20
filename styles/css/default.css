@@ -119,6 +119,12 @@
   }
 }
 
+.calculator__container .calculator__screen .container {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
 .calculator__container .calculator__body {
   background-color: #232c43;
   border-radius: 10px;

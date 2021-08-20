@@ -1,17 +1,33 @@
-import { CSSProperties, useContext, MouseEvent } from 'react';
+import { CSSProperties, useContext } from 'react';
 import { ResultContext } from '../../../context';
 
 interface KeyProps {
   style?: CSSProperties;
-  value: number | string;
+  value: string;
 }
 
 const Key: React.FC<KeyProps> = ({ children, style, value }) => {
   const { result, setResult } = useContext(ResultContext);
 
   const onKeyClick = () => {
-    //@ts-ignore
-    setResult(result + value);
+    switch (value) {
+      case '=':
+        return evalExpression(result);
+      case 'delete':
+        return setResult(result.slice(0, -1));
+      case 'reset':
+        return setResult('');
+      default:
+        return setResult(result + value);
+    }
+  };
+
+  const evalExpression = (val: string) => {
+    try {
+      return val !== '' ? setResult(eval(val)) : '';
+    } catch (err) {
+      return setResult('Invalid Input');
+    }
   };
 
   return (

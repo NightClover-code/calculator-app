@@ -6,6 +6,6 @@ export interface CounterState {
 }
 
 export interface ResultState {
-  result: number;
-  setResult: Dispatch<SetStateAction<number>>;
+  result: string;
+  setResult: Dispatch<SetStateAction<string>>;
 }

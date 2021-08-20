@@ -19,7 +19,9 @@ const Calculator = () => {
         </div>
       </div>
       <div className="calculator__screen">
-        <h1>{result}</h1>
+        <div className="container">
+          <h1>{result}</h1>
+        </div>
       </div>
       <div className="calculator__body">
         <KeysGrid />
