@@ -20,7 +20,7 @@ const Calculator = () => {
       </div>
       <div className="calculator__screen">
         <div className="container">
-          <h1>{result}</h1>
+          <h1 className="screen__content">{result}</h1>
         </div>
       </div>
       <div className="calculator__body">

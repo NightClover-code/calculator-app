@@ -7,6 +7,7 @@
   .calculator__head {
     h2 {
       margin-top: 8px;
+      color: var(--text);
     }
     color: #ffffff;
     display: flex;
@@ -15,6 +16,7 @@
       display: flex;
       align-items: center;
       h4 {
+        color: var(--text);
         margin-top: 20px;
         margin-right: 15px;
         text-transform: uppercase;
@@ -35,6 +37,7 @@
         align-items: center;
         flex-flow: column nowrap;
         span {
+          color: var(--text);
           padding-left: 15px;
           padding-bottom: 5px;
           font-size: 13px;
@@ -50,7 +53,6 @@
     width: 100%;
     height: 120px;
     background-color: var(--screen);
-    color: #fff;
     text-align: right;
     display: flex;
     align-items: center;
@@ -73,6 +75,9 @@
       width: 100%;
       margin: auto;
       overflow: hidden;
+      .screen__content {
+        color: var(--text);
+      }
     }
   }
   .calculator__body {

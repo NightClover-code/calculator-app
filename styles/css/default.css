@@ -22,6 +22,7 @@
 
 .calculator__container .calculator__head h2 {
   margin-top: 8px;
+  color: var(--text);
 }
 
 .calculator__container .calculator__head .theme__toggler__container {
@@ -34,6 +35,7 @@
 }
 
 .calculator__container .calculator__head .theme__toggler__container h4 {
+  color: var(--text);
   margin-top: 20px;
   margin-right: 15px;
   text-transform: uppercase;
@@ -67,6 +69,7 @@
 }
 
 .calculator__container .calculator__head .theme__toggler__container .theme__toggler span {
+  color: var(--text);
   padding-left: 15px;
   padding-bottom: 5px;
   font-size: 13px;
@@ -83,7 +86,6 @@
   width: 100%;
   height: 120px;
   background-color: var(--screen);
-  color: #fff;
   text-align: right;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -123,6 +125,10 @@
   width: 100%;
   margin: auto;
   overflow: hidden;
+}
+
+.calculator__container .calculator__screen .container .screen__content {
+  color: var(--text);
 }
 
 .calculator__container .calculator__body {
@@ -346,7 +352,7 @@
   --key: hsl(30, 25%, 89%);
   --key-shadow: hsl(28, 16%, 65%);
   --key-text: hsl(221, 14%, 31%);
-  --white: hsl(0, 0, 100%);
+  --text: #ffffff;
 }
 
 .light__theme {
@@ -360,6 +366,20 @@
   --key: hsl(45, 7%, 89%);
   --key-shadow: hsl(35, 11%, 61%);
   --key-text: hsl(60, 10%, 19%);
-  --white: hsl(0, 0, 100%);
+  --text: hsl(60, 10%, 19%);
+}
+
+.funky {
+  --bg-main: hsl(268, 75%, 9%);
+  --toggle: hsl(268, 71%, 12%);
+  --screen: hsl(268, 71%, 12%);
+  --delete: hsl(281, 89%, 26%);
+  --delete-text: hsl(285, 91%, 52%);
+  --result: hsl(176, 100%, 44%);
+  --result-shadow: hsl(177, 92%, 70%);
+  --key: hsl(268, 47%, 21%);
+  --key-shadow: hsl(290, 70%, 36%);
+  --key-text: hsl(52, 100%, 62%);
+  --text: hsl(52, 100%, 62%);
 }
 /*# sourceMappingURL=default.css.map */
