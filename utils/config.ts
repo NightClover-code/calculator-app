@@ -10,8 +10,8 @@ export const seoConfig = {
 export const delKeyStyle: CSSProperties = {
   fontSize: '18px',
   textTransform: 'uppercase',
-  backgroundColor: 'hsl(225, 21%, 49%)',
-  boxShadow: '0px 4px 0px hsl(224, 28%, 35%)',
+  backgroundColor: 'var(--delete)',
+  boxShadow: '0px 4px 0px var(--delete-shadow)',
   color: '#ffffff',
 };
 
@@ -19,8 +19,8 @@ export const resultKeyStyle: CSSProperties = {
   fontSize: '18px',
   color: '#ffffff',
   gridColumn: 'span 2',
-  backgroundColor: 'hsl(6, 63%, 50%)',
-  boxShadow: '0px 4px 0px hsl(6, 70%, 34%)',
+  backgroundColor: 'var(--result)',
+  boxShadow: '0px 4px 0px var(--result-shadow)',
 };
 
 export const resetKeyStyle: CSSProperties = {
@@ -28,6 +28,6 @@ export const resetKeyStyle: CSSProperties = {
   textTransform: 'uppercase',
   color: '#ffffff',
   gridColumn: 'span 2',
-  backgroundColor: 'hsl(225, 21%, 49%)',
-  boxShadow: '0px 4px 0px hsl(224, 28%, 35%)',
+  backgroundColor: 'var(--delete)',
+  boxShadow: '0px 4px 0px var(--delete-shadow)',
 };

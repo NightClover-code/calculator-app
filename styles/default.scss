@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
-@import './theme3';
 @import '../components/Calculator/calculator';
 @import '../components/KeysGrid/keys-grid';
 @import '../components/KeysGrid/Key/key';
@@ -34,7 +33,7 @@
   --toggle: hsl(223, 31%, 20%);
   --screen: hsl(224, 36%, 15%);
   --delete: hsl(225, 21%, 49%);
-  --delete-text: hsl(224, 28%, 35%);
+  --delete-shadow: hsl(224, 28%, 35%);
   --result: hsl(6, 63%, 50%);
   --result-shadow: hsl(6, 70%, 34%);
   --key: hsl(30, 25%, 89%);
@@ -48,7 +47,7 @@
   --toggle: hsl(0, 5%, 81%);
   --screen: hsl(0, 0%, 93%);
   --delete: hsl(185, 42%, 37%);
-  --delete-text: hsl(185, 58%, 25%);
+  --delete-shadow: hsl(185, 58%, 25%);
   --result: hsl(25, 98%, 40%);
   --result-shadow: hsl(25, 99%, 27%);
   --key: hsl(45, 7%, 89%);
@@ -62,7 +61,7 @@
   --toggle: hsl(268, 71%, 12%);
   --screen: hsl(268, 71%, 12%);
   --delete: hsl(281, 89%, 26%);
-  --delete-text: hsl(285, 91%, 52%);
+  --delete-shadow: hsl(285, 91%, 52%);
   --result: hsl(176, 100%, 44%);
   --result-shadow: hsl(177, 92%, 70%);
   --key: hsl(268, 47%, 21%);
