@@ -7,7 +7,7 @@ export const CounterContext = createContext<counterState>({
 });
 
 export const CounterProvider: React.FC = ({ children }) => {
-  const [counter, setCounter] = useState<number | null>(0);
+  const [counter, setCounter] = useState<number>(0);
 
   useEffect(() => {
     console.log(counter);

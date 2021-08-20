@@ -6,7 +6,7 @@ const Toggle = () => {
   const { counter } = useContext(CounterContext);
 
   const distance = 22;
-  const preciseDistance = counter !== null ? distance * counter! : distance;
+  const preciseDistance = distance * counter;
 
   return (
     <div className="toggle__slider">
