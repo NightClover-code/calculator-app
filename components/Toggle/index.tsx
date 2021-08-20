@@ -6,7 +6,7 @@ const Toggle = () => {
   const { counter } = useContext(CounterContext);
 
   const distance = 22;
-  const preciseDistance = distance * counter!;
+  const preciseDistance = counter !== null ? distance * counter! : distance;
 
   return (
     <div className="toggle__slider">
@@ -15,8 +15,7 @@ const Toggle = () => {
           className="toggle__circle"
           id="circle"
           style={{
-            transform:
-              counter !== null ? `translateX(${preciseDistance}px)` : '',
+            transform: `translateX(${preciseDistance}px)`,
           }}
         ></div>
       </Box>

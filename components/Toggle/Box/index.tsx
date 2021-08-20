@@ -11,9 +11,9 @@ const Box: React.FC<BoxProps> = ({ id, children, dataId }) => {
 
   const onClickHandler = (event: MouseEvent<HTMLDivElement>) => {
     //@ts-ignore
-    const id: string | null = event.target.getAttribute('data-id');
+    const id: string = event.target.getAttribute('data-id');
 
-    id !== null ? setCounter(parseInt(id)) : setCounter(id);
+    setCounter(parseInt(id));
   };
 
   return (
