@@ -12,7 +12,7 @@
 }
 
 .app__container {
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
   font-size: 23px;
   font-family: 'Spartan', sans-serif;
@@ -25,6 +25,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: column nowrap;
+  }
+}
+
+.attribution p {
+  font-size: 16px;
+  color: var(--text);
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+  a {
+    color: var(--delete);
+    text-decoration: none;
   }
 }
 

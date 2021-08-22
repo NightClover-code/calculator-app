@@ -2,6 +2,7 @@
 .calculator__container {
   max-width: 530px;
   width: 80%;
+  margin: 50px 0;
 }
 
 @media screen and (max-width: 800px) {
@@ -338,7 +339,7 @@
 }
 
 .app__container {
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
   font-size: 23px;
   font-family: 'Spartan', sans-serif;
@@ -359,6 +360,22 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.attribution p {
+  font-size: 16px;
+  color: var(--text);
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+}
+
+.attribution p a {
+  color: var(--delete);
+  text-decoration: none;
 }
 
 .dark__theme {

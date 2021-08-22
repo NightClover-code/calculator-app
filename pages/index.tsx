@@ -1,9 +1,10 @@
 import { NextPage } from 'next';
 import { seoConfig } from '../utils';
 import SEO from '../components/SEO';
-import Caclulator from '../components/Calculator';
+import Calculator from '../components/Calculator';
 import { useContext } from 'react';
 import { CounterContext } from '../context';
+import Attribution from '../components/Attribution';
 
 const HomePage: NextPage = () => {
   const { counter } = useContext(CounterContext);
@@ -15,7 +16,8 @@ const HomePage: NextPage = () => {
       <SEO {...seoConfig} />
       <main className={`app__container ${themes[counter]}`}>
         <div className="wrapper">
-          <Caclulator />
+          <Calculator />
+          <Attribution />
         </div>
       </main>
     </>
